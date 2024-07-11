@@ -1,7 +1,7 @@
-const { DataTypes } = require('sequelize');
-const sequelize = require('../config');
+const { DataTypes } = require("sequelize");
+const sequelize = require("../config");
 
-const Organisation = sequelize.define('Organisation', {
+const Organisation = sequelize.define("Organisation", {
   orgId: {
     type: DataTypes.UUID,
     defaultValue: DataTypes.UUIDV4,

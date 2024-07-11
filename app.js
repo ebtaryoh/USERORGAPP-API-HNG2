@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 app.use("/auth", authRoutes);
 app.use("/api/organisations", orgRoutes);
 
-const PORT = process.env.PORT || 3307;
+const PORT = process.env.PORT || 3000;
 sequelize
   .sync({ force: true })
   .then(() => {
